@@ -13,7 +13,7 @@ public class JumpPad : MonoBehaviour
         if (other.CompareTag("Player")) {
             PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null) {
-                verticalVelocity = 0f;
+                playerController.verticalVelocity = 0f;
                 animator.SetTrigger("jumped");
                 playerController.verticalVelocity += jumpForce;
             }
