@@ -343,6 +343,7 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator Die()
     {
+        bodyTarget.transform.DOLocalRotate(new Vector3(0, 0, 0), 1f);
         animator.SetTrigger("Death");
         moveSpeed = 0;
         accelerationTime = 0f;

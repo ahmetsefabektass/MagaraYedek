@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RotatingPlatform
   - Propeller
+  - SpeedBooster
   layers:
   - Default
   - TransparentFX
