@@ -14,6 +14,7 @@ public class CutSceneController : MonoBehaviour
     }
     void Start()
     {
+        GeneralUI.Instance.SetInfoText("Press ESC to skip cutscene", 5f);
         StartCoroutine(PlayVideoAndLoadScene());
     }
 
