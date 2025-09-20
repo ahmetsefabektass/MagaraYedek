@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
     Quaternion lastPlatformRotation;
     Vector3 deltaPos;
     bool isDead = false;
+
+    [SerializeField] MenuUI menu;
     private void Awake()
     {
         CanInteract = true;
@@ -82,13 +84,17 @@ public class PlayerController : MonoBehaviour
         inputs.Player.Jump.started += Jump_performed;
         inputs.Player.Movement.started += ctx =>
         {
-            if(HasInteracted || isDead) return;
+            if (HasInteracted || isDead) return;
             bodyTarget.transform.DOLocalRotate(new Vector3(-20, 0, 0), 1f);
         };
         inputs.Player.Movement.canceled += ctx =>
         {
-            if(HasInteracted || isDead) return;
+            if (HasInteracted || isDead) return;
             bodyTarget.transform.DOLocalRotate(new Vector3(0, 0, 0), 1f);
+        };
+        inputs.Player.Esc.started += ctx =>
+        {
+            menu.ShowMenu();
         };
     }
     private  void Jump_performed(InputAction.CallbackContext obj)
