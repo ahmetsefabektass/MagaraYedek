@@ -1,9 +1,9 @@
-using BehaviorDesigner.Runtime.Tasks.Unity.Timeline;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class MenuUI : MonoBehaviour
 {
+    [SerializeField]Image background;
     public void StartButton()
     {
         if (SceneManager.GetActiveScene().name == "Clock")
@@ -23,6 +23,13 @@ public class MenuUI : MonoBehaviour
     }
     public void ShowMenu()
     {
+        if (SceneManager.GetActiveScene().name == "Clock")
+        {
+            Color color = background.color;
+            color.a = 0f;
+            background.color = color;
+        }
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
