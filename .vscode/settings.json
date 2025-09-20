@@ -52,4 +52,5 @@
         "Temp/": true
     },
     "dotnet.defaultSolution": "magarajam.sln"
+    "dotnet.defaultSolution": "MagaraYedek.sln"
 }
