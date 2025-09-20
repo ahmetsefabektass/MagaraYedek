@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuUI : MonoBehaviour
 {
-    TextMeshProUGUI playButtonText;
     public void StartButton()
     {
+        if (SceneManager.GetActiveScene().name == "Clock")
+        {
+            HideMenu();
+            return;
+        }
         SceneManager.LoadScene("CutScene");
     }
     public void QuitButton()
@@ -19,9 +23,6 @@ public class MenuUI : MonoBehaviour
     }
     public void ShowMenu()
     {
-        if(SceneManager.GetActiveScene().name == "Clock") playButtonText.text = "Resume";
-        else playButtonText.text = "Play";
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
