@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     public bool hasLanded = false;
     public float jumpForce = 9f;
     public AnimationCurve speedCurve;
+    public float speedBooster = 1f;
+    public float speedBoosterDuration = 5f;
+
     float accelerationTime = 0f;
     float accelerationTimeMax = 1f;
     public bool HasInteracted { get; set; } = false;
@@ -122,7 +125,7 @@ public class PlayerController : MonoBehaviour
         HandleRotation();
         Gravity();
 
-       move = transform.TransformDirection(Vector3.forward) * moveSpeed;
+       move = transform.TransformDirection(Vector3.forward) * moveSpeed * speedBooster;
        jump = Vector3.up * verticalVelocity;
        movementVector = move + jump;
 
@@ -327,6 +330,16 @@ public class PlayerController : MonoBehaviour
             currentPlatform = hit.gameObject;
             lastPlatformRotation = currentPlatform.transform.rotation;
         }
+    }
+    public void ActivateSpeedBoost()
+    {
+        speedBooster = 2f;
+        StartCoroutine(ResetSpeedBoost());
+    }
+    IEnumerator ResetSpeedBoost()
+    {
+        yield return new WaitForSeconds(speedBoosterDuration);
+        speedBooster = 1f;
     }
     IEnumerator Die()
     {
