@@ -51,17 +51,28 @@ public class FlowTutorial : InteractableTutorial
         uiController.fillerImage.fillAmount = 0;
         GeneralUI.Instance.SetInfoText("Hold \"E\" button ", 5f);
         float timer = 0f;
+
+        player.animator.SetTrigger("flow");
+
+        float clipLength = player.animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+
+        yield return new WaitForSeconds(clipLength);
+
         while (x < 100 && timer < 10f)
         {
             timer += Time.deltaTime;
             if (player.inputs.Player.Interact.IsInProgress())
             {
-                x += Time.deltaTime * 30;
+                x += 30 * Time.deltaTime;
             }
             x -= Time.deltaTime * 15;
             uiController.fillerImage.fillAmount = x / 100;
             yield return null;
         }
+
+        player.animator.SetTrigger("flowDone");
+        //animator.SetTrigger("calibrated");
+
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);

@@ -97,7 +97,7 @@ public class PlayerTutorialScript : MonoBehaviour
             menu.ShowMenu();
         };
     }
-    private  void Jump_performed(InputAction.CallbackContext obj)
+    private void Jump_performed(InputAction.CallbackContext obj)
     {
         if (characterController.isGrounded && !hasJumped && !HasInteracted)
         {
@@ -108,6 +108,7 @@ public class PlayerTutorialScript : MonoBehaviour
 
     void Update()
     {
+        //listen for event that comes from behavior tree
         if (chargedByVendor)
         {
             if (!chargingByVendor)

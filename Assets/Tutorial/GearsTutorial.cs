@@ -50,8 +50,15 @@ public class GearsTutorial : InteractableTutorial
     {
         uiController.EButtonImage.enabled = false;
         uiController.fillerImage.fillAmount = 0;
-        GeneralUI.Instance.SetInfoText("Hold \"E\" button ", 5f);
+        GeneralUI.Instance.SetInfoText("Spam \"E\" button ", 5f);
         float timer = 0f;
+
+        player.animator.SetTrigger("cranc");
+
+        float clipLength = player.animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+
+        yield return new WaitForSeconds(clipLength);
+
         while (x < 100 && timer < 10f)
         {
             timer += Time.deltaTime;
@@ -63,6 +70,10 @@ public class GearsTutorial : InteractableTutorial
             uiController.fillerImage.fillAmount = x / 100;
             yield return null;
         }
+
+        player.animator.SetTrigger("crancDone");
+        //animator.SetTrigger("calibrated");
+
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);
