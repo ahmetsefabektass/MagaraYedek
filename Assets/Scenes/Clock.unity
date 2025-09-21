@@ -712,6 +712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &73829226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &182109491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,6 +1649,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &245743780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &313778588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3304,8 +3316,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590508504}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00126795, y: 0.9850146, z: -0.007248102, w: 0.17231396}
-  m_LocalPosition: {x: 78.76654, y: 63.74, z: 0.39806318}
+  m_LocalRotation: {x: -0.000054863867, y: 0.999942, z: -0.00876279, w: -0.006260642}
+  m_LocalPosition: {x: 0.0800103, y: 12.96, z: 11.879323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3520,6 +3532,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &645149124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +3666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &708943037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4618,6 +4636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &861370061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5486,6 +5507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &993801658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6112,6 +6136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &1050500405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6328,6 +6355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &1072461999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6597,6 +6627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &1102480911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6979,6 +7012,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &1158289738
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,6 +7613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &1205530891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7708,6 +7747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &1211664222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8029,6 +8071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &1312641649
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,6 +8120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!114 &1312641652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8788,42 +8836,42 @@ PrefabInstance:
     - target: {fileID: 487029955839321366, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99958026
+      value: 0.9996004
       objectReference: {fileID: 0}
     - target: {fileID: 487029955839321366, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.028970718
+      value: -0.027565842
       objectReference: {fileID: 0}
     - target: {fileID: 487029955839321366, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000045616588
+      value: 0.0062585035
       objectReference: {fileID: 0}
     - target: {fileID: 487029955839321366, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -9.545156e-10
+      value: 0.00017258989
       objectReference: {fileID: 0}
     - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99997294
+      value: 0.999942
       objectReference: {fileID: 0}
     - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.007358106
+      value: 0.008762789
       objectReference: {fileID: 0}
     - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000004087181
+      value: 0.0062606414
       objectReference: {fileID: 0}
     - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.940068e-10
+      value: -0.000054863867
       objectReference: {fileID: 0}
     - target: {fileID: 2659574549062033296, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
@@ -8858,57 +8906,57 @@ PrefabInstance:
     - target: {fileID: 5951528419227008633, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99997294
+      value: 0.999942
       objectReference: {fileID: 0}
     - target: {fileID: 5951528419227008633, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.007358106
+      value: 0.008762789
       objectReference: {fileID: 0}
     - target: {fileID: 5951528419227008633, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000004087181
+      value: 0.0062606414
       objectReference: {fileID: 0}
     - target: {fileID: 5951528419227008633, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.940068e-10
+      value: -0.000054863867
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 62.74
+      value: 11.96
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.76
+      value: 5.49
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.17231861
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9850413
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
@@ -8918,7 +8966,7 @@ PrefabInstance:
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 160.155
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
@@ -10088,6 +10136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &1574388762
 GameObject:
   m_ObjectHideFlags: 0
@@ -12235,6 +12286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anisotropy: 0.25
+  scattering: 1
+  radius: 0.2
 --- !u!1 &2135274226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2019965052978984543, guid: 9186308ca64c2a74bac723984d1e00e5,
