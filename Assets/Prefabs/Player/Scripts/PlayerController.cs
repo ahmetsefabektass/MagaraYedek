@@ -352,7 +352,7 @@ public class PlayerController : MonoBehaviour
     }
     public void ActivateSpeedBoost()
     {
-        speedBooster = 2f;
+        speedBooster = 1.5f;
         StartCoroutine(ResetSpeedBoost());
     }
     IEnumerator ResetSpeedBoost()
