@@ -23,13 +23,13 @@ public class TalkUnlimited : Action
     {
         timer += Time.deltaTime;
 
-        if (!sentenceShown && timer >= waitTime)
+        if (timer >= waitTime)
         {
             int index = Random.Range(0, sentences.Count);
             string sentence = sentences[index].Value;
 
             GeneralUI.Instance.SetInfoText(sentence, waitTime);
-            sentenceShown = true;
+            timer = 0;
         }
 
         return TaskStatus.Running;
