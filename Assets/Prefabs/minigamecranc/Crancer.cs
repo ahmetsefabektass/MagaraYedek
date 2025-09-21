@@ -73,7 +73,7 @@ public class Crancer : Interactable
         }
 
         player.animator.SetTrigger("crancDone");
-        //animator.SetTrigger("calibrated");
+        animator.SetTrigger("turn");
 
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
