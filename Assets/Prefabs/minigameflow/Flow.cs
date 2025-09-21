@@ -8,6 +8,7 @@ public class Flow : Interactable
     float x;
     void Awake()
     {
+        CanInteract = false;
         animator = GetComponent<Animator>();
     }
     public override void Interact(PlayerController player)
@@ -72,7 +73,6 @@ public class Flow : Interactable
             uiController.fillerImage.fillAmount = x / 100;
             yield return null;
         }
-
         player.animator.SetTrigger("flowDone");
         animator.SetTrigger("flowed");
 
@@ -80,6 +80,13 @@ public class Flow : Interactable
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);
         player.HasInteracted = false;
+
+        if (x < 100)
+        {
+            InteractionFailed?.Invoke();
+            yield break;
+        }
         GameManager.Instance.ResetTimer();
+        interacted?.Invoke();
     }
 }

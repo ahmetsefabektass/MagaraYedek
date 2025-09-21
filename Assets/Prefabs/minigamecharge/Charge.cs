@@ -8,6 +8,7 @@ public class Charge : Interactable
     float x;
     void Awake()
     {
+        CanInteract = false;
         animator = GetComponent<Animator>();
     }
     public override void Interact(PlayerController player)
@@ -72,13 +73,19 @@ public class Charge : Interactable
             yield return null;
         }
 
-        player.animator.SetTrigger("chargeMiniDone");
-        //animator.SetTrigger("calibrated");
-
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);
         player.HasInteracted = false;
+        player.animator.SetTrigger("chargeMiniDone");
+
+        if (x < 100)
+        {
+            InteractionFailed?.Invoke();
+            yield break;
+        }
+
         GameManager.Instance.ResetTimer();
+        interacted?.Invoke();
     }
 }

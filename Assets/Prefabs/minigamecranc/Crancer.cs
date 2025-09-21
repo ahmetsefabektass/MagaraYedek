@@ -8,6 +8,7 @@ public class Crancer : Interactable
     float x;
     void Awake()
     {
+        CanInteract = false;
         animator = GetComponent<Animator>();
     }
     public override void Interact(PlayerController player)
@@ -71,14 +72,20 @@ public class Crancer : Interactable
             uiController.fillerImage.fillAmount = x / 100;
             yield return null;
         }
-
-        player.animator.SetTrigger("crancDone");
-        animator.SetTrigger("turn");
-
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);
         player.HasInteracted = false;
+        player.animator.SetTrigger("crancDone");
+        animator.SetTrigger("turn");
+
+        if (x < 100)
+        {
+            InteractionFailed?.Invoke();
+            yield break;
+        }
+
         GameManager.Instance.ResetTimer();
+        interacted?.Invoke();
     }
 }
