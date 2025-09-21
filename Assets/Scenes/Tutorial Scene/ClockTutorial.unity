@@ -6982,7 +6982,7 @@ PrefabInstance:
         Come on, don\u2019t be shy, step a little closer so I\u00a0can\u00a0do\u00a0my\u00a0job."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-615.740662,325.227356)"},"ID":6,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(-2.55934334,136.179749)","WatchedFields":["storedValue1"]},"ID":7,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"chargedByVendor"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject.SetActive","NodeData":{"Offset":"(-426.10144,309.1235)"},"ID":8,"Name":"Set
-        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-241.536575,320)"},"ID":9,"Name":"Until
+        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":2},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-241.536575,320)"},"ID":9,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(2.59738541,154.2857)","WatchedFields":["storedValue1"]},"ID":10,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"ChargeCompleted"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(4.69706726,310.9096)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-173.809525,471.428528)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Talk","NodeData":{"Offset":"(-270,490)"},"ID":13,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Just
         like all the gears in this clock are connected and work together, our job
@@ -6995,26 +6995,26 @@ PrefabInstance:
         to the Generator!\""},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(126.190468,501.428528)"},"ID":19,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":20,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"GeneratorDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(126.206146,527.2414)"},"ID":21,"Name":"Check
-        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":2},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":3},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(218.333237,349.1667)"},"ID":22,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Wow,
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":3},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":4},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(218.333237,349.1667)"},"ID":22,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Wow,
         even I feel better now. Let\u2019s catch some of this\u00a0flow\u00a0next."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(369.6068,309.1667)"},"ID":23,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":24,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"FlowDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(502.0688,695.172363)"},"ID":25,"Name":"Check
-        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":4},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":5},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(595.0001,360)"},"ID":26,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Everything\u2019s
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":5},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":6},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(595.0001,360)"},"ID":26,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Everything\u2019s
         running smoothly, almost like butter. Maybe give these gears a little\u00a0touch\u00a0too."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(743.149,301.4815)"},"ID":27,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":28,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"GearsDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(889.3102,710)"},"ID":29,"Name":"Check
-        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":6},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":7},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(948.6118,332.963)"},"ID":30,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Alright,
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":7},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":8},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(948.6118,332.963)"},"ID":30,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Alright,
         let\u2019s finish your first day with one last calibration. I\u2019ll be
         waiting here anyway\u2026 I can\u2019t really\u00a0go\u00a0anywhere."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(1110.02393,310)"},"ID":31,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":32,"Name":"Has
         Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"CalibrationDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(1244.82764,685.517334)"},"ID":33,"Name":"Check
-        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":8},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":9},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(1332.60852,315)"},"ID":34,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Pretty
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":9},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":10},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(1332.60852,315)"},"ID":34,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Pretty
         good for the first day, screw\u2014this should hold us\u00a0for\u00a0a\u00a0while."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}}]}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
@@ -7030,40 +7030,45 @@ PrefabInstance:
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 1154274286}
+      objectReference: {fileID: 1266751345}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[3]
       value: 
-      objectReference: {fileID: 42275185}
+      objectReference: {fileID: 1154274286}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[4]
       value: 
-      objectReference: {fileID: 1154274286}
+      objectReference: {fileID: 42275185}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[5]
       value: 
-      objectReference: {fileID: 42275185}
+      objectReference: {fileID: 1154274286}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[6]
       value: 
-      objectReference: {fileID: 1154274286}
+      objectReference: {fileID: 42275185}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[7]
       value: 
-      objectReference: {fileID: 42275185}
+      objectReference: {fileID: 1154274286}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[8]
       value: 
-      objectReference: {fileID: 1154274286}
+      objectReference: {fileID: 42275185}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 1154274286}
+    - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
+        type: 3}
+      propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.data[10]
       value: 
       objectReference: {fileID: 42275185}
     - target: {fileID: 4048409623053065050, guid: 596f05213436b864981fc7232009ef11,
@@ -8287,45 +8292,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1567277593436180200, guid: 15bb12c10fc30a844afbde98db4f185b,
+        type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 1884954822}
     - target: {fileID: 2274344231618633010, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.999973
+      value: 0.99997294
       objectReference: {fileID: 0}
     - target: {fileID: 2274344231618633010, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0073581086
+      value: 0.007358108
       objectReference: {fileID: 0}
     - target: {fileID: 2274344231618633010, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -8.167212e-16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2274344231618633010, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0160716e-17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2631805122847571481, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.999973
+      value: 0.99997294
       objectReference: {fileID: 0}
     - target: {fileID: 2631805122847571481, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0073581086
+      value: 0.007358108
       objectReference: {fileID: 0}
     - target: {fileID: 2631805122847571481, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -8.167212e-16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2631805122847571481, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0160716e-17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4587719750157045315, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
@@ -8335,22 +8345,22 @@ PrefabInstance:
     - target: {fileID: 6764713466707490772, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9995803
+      value: 0.99958026
       objectReference: {fileID: 0}
     - target: {fileID: 6764713466707490772, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.028970717
+      value: -0.028970715
       objectReference: {fileID: 0}
     - target: {fileID: 6764713466707490772, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000018538037
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6764713466707490772, guid: 15bb12c10fc30a844afbde98db4f185b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -5.3728567e-11
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9385,6 +9395,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e7169be86837249836cfdd584c05a2, type: 3}
+--- !u!1 &1266751345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7077905894006020050, guid: 15bb12c10fc30a844afbde98db4f185b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1154274285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1302830356
 GameObject:
   m_ObjectHideFlags: 0
@@ -13525,6 +13541,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f19c7e5f21d06ab4ab33e3b3581cc223, type: 3}
+--- !u!114 &1884954822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 876253090046529760, guid: b8e7169be86837249836cfdd584c05a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1262066278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0694874a4e66d064db41c5ef536a12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1931537964
 GameObject:
   m_ObjectHideFlags: 0
