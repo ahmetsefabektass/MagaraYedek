@@ -121,7 +121,7 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -1878332245247344467}
   - {fileID: -4047984996021169403}
-  - {fileID: -235921663943443025}
+  - {fileID: 0}
   m_RendererFeatureMap: adc0de57c6d2eee505130ce017abd2c7affdd4217fd6b9fc
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
