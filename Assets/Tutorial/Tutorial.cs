@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using BehaviorDesigner.Runtime;
 using UnityEngine;
 
@@ -5,7 +6,6 @@ public class Tutorial : MonoBehaviour
 {
     public static Tutorial Instance;
     BehaviorTree behaviorTree;
-    InteractableTutorial interactables;
     private void Awake()
     {
         behaviorTree = GetComponent<BehaviorTree>();

@@ -20,16 +20,15 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        timer = 60f;
+        timer = 120;
     }
     void Update()
     {
         TimeHandler();
     }
-    public void AddTimer(float time)
+    public void ResetTimer()
     {
-        timer += time;
-        if (timer > 120f) timer = 120f;
+        timer = 120;
     }
     private void TimeHandler()
     {

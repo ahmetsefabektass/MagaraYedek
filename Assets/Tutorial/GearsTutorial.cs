@@ -67,7 +67,7 @@ public class GearsTutorial : InteractableTutorial
         uiController.fillerImage.fillAmount = 1;
         uiController.gameObject.SetActive(false);
         player.HasInteracted = false;
-        GameManager.Instance.AddTimer(40f);
+        GameManager.Instance.ResetTimer();
         Tutorial.Instance.GetBehaviorTree().SendEvent("GearsDone");
     }
 }

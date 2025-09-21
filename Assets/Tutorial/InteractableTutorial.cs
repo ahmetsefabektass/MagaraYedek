@@ -1,5 +1,6 @@
 public class InteractableTutorial : Interactable
 {
+    public bool CanInteractTutorial = false;
     public override void EnteredRange()
     {
 
