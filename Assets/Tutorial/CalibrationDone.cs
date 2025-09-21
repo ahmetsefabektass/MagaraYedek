@@ -5,6 +5,10 @@ public class CalibrationDone : InteractableTutorial
 {
     float x;
     Animator animator;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     public override void Interact(PlayerController player)
     {
 
@@ -72,7 +76,7 @@ public class CalibrationDone : InteractableTutorial
         }
 
         player.animator.SetTrigger("calibrationDone");
-        animator.SetTrigger("calibrated");
+        animator.SetBool("calibrated",true);
 
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
