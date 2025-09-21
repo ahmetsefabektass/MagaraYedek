@@ -4,6 +4,11 @@ using UnityEngine;
 public class FlowTutorial : InteractableTutorial
 {
     float x;
+    Animator animator;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     public override void Interact(PlayerController player)
     {
         
@@ -53,6 +58,7 @@ public class FlowTutorial : InteractableTutorial
         float timer = 0f;
 
         player.animator.SetTrigger("flow");
+        animator.SetTrigger("flow");
 
         float clipLength = player.animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 
@@ -71,7 +77,7 @@ public class FlowTutorial : InteractableTutorial
         }
 
         player.animator.SetTrigger("flowDone");
-        //animator.SetTrigger("calibrated");
+        animator.SetTrigger("flowed");
 
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
