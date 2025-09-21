@@ -1,5 +1,6 @@
 
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -17,6 +18,13 @@ public class ExplodeScene : MonoBehaviour
     {
         GeneralUI.Instance.SetInfoText("Press \"ESC\" to skip", 3f);
         StartCoroutine(PlayVideoAndLoadScene());
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Clock");
+        }
     }
     IEnumerator PlayVideoAndLoadScene()
     {
