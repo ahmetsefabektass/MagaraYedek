@@ -55,6 +55,7 @@ public class Flow : Interactable
         float timer = 0f;
 
         player.animator.SetTrigger("flow");
+        animator.SetTrigger("flow");
 
         float clipLength = player.animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 
@@ -73,7 +74,7 @@ public class Flow : Interactable
         }
 
         player.animator.SetTrigger("flowDone");
-        //animator.SetTrigger("calibrated");
+        animator.SetTrigger("flowed");
 
         uiController.EButtonImage.enabled = true;
         uiController.fillerImage.fillAmount = 1;
