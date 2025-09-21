@@ -11,7 +11,7 @@ public class MenuUI : MonoBehaviour
             HideMenu();
             return;
         }
-        SceneManager.LoadScene("CutScene");
+        SceneManager.LoadScene("ClockTutorial");
     }
     public void QuitButton()
     {
