@@ -1648,16 +1648,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99997294
-      objectReference: {fileID: 0}
-    - target: {fileID: 2004722040447962300, guid: 107852120d5d6604eb0ab5a52925c3e6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0073581394
-      objectReference: {fileID: 0}
     - target: {fileID: 2659574549062033296, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_Name
@@ -1668,6 +1658,16 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 411442689}
+    - target: {fileID: 5432026622173615629, guid: 107852120d5d6604eb0ab5a52925c3e6,
+        type: 3}
+      propertyPath: jumpAudioSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432026622173615629, guid: 107852120d5d6604eb0ab5a52925c3e6,
+        type: 3}
+      propertyPath: landAudioSource
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6825884182272291285, guid: 107852120d5d6604eb0ab5a52925c3e6,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -54,6 +54,11 @@ public class PlayerController : MonoBehaviour
     bool isDead = false;
 
     [SerializeField] MenuUI menu;
+
+    [SerializeField] AudioSource walkAudioSource;
+    [SerializeField] AudioSource jumpAudioSource;
+    [SerializeField] AudioSource landAudioSource;
+
     private void Awake()
     {
         CanInteract = true;
@@ -80,15 +85,25 @@ public class PlayerController : MonoBehaviour
         accelerationTimeMax = speedCurve.keys[speedCurve.length - 1].time;
 
         inputs.Player.Jump.started += Jump_performed;
+        inputs.Player.Jump.started += ctx =>
+        {
+            if (characterController.isGrounded && !hasJumped && !HasInteracted)
+            {
+            if (jumpAudioSource != null) jumpAudioSource.PlayOneShot(jumpAudioSource.clip);
+            }
+        };
+
         inputs.Player.Movement.started += ctx =>
         {
             if (HasInteracted || isDead) return;
             bodyTarget.transform.DOLocalRotate(new Vector3(-20, 0, 0), 1f);
+            if (!walkAudioSource.isPlaying) walkAudioSource.Play();
         };
         inputs.Player.Movement.canceled += ctx =>
         {
             if (HasInteracted || isDead) return;
             bodyTarget.transform.DOLocalRotate(new Vector3(0, 0, 0), 1f);
+            walkAudioSource.Stop();
         };
         inputs.Player.Esc.started += ctx =>
         {
@@ -337,6 +352,7 @@ public class PlayerController : MonoBehaviour
     }
     public void SetJumpAnimationIntroFinished()
     {
+        landAudioSource.PlayOneShot(landAudioSource.clip);
         animator.SetBool("Landed", false);
         verticalVelocity = jumpForce;
         hasJumped = true;
