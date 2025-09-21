@@ -18,14 +18,15 @@ public class GameCompose : MonoBehaviour
         }
         randomIndex = UnityEngine.Random.Range(0, interactables.Count);
         SelectInteractable(randomIndex);
+        gameOver += () => GameManager.Instance.LoadDeathScene();
     }
     void Update()
     {
-        if (!endlessMode) return;
         timer += Time.deltaTime;
-        if (timer >= 600)
+        if (timer >= 5)
         {
             gameOver?.Invoke();
+            //GameManager.Instance.LoadDeathScene();
         }
     }
 
@@ -55,9 +56,5 @@ public class GameCompose : MonoBehaviour
     {
         interactables[i].CanInteract = true;
         GeneralUI.Instance.SetInfoText("Go and fix: " + interactables[i].name);
-    }
-    public void SetEndlessMode()
-    {
-        endlessMode = true;
     }
 }
