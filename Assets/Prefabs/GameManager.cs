@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public void AddTimer(float time)
     {
         timer += time;
+        if (timer > 120f) timer = 120f;
     }
     private void TimeHandler()
     {

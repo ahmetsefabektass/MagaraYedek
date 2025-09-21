@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5664302487369358202}
   - component: {fileID: 3628658747156012029}
+  - component: {fileID: 5592783950691452399}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Untagged
@@ -53,14 +54,50 @@ MonoBehaviour:
   resetValuesOnRestart: 0
   externalBehavior: {fileID: 0}
   mBehaviorSource:
-    behaviorName: Behavior
+    behaviorName: Tutorial
     behaviorDescription: 
     mTaskData:
       types: []
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(327.440643,76.17974)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(37.4406433,266.179749)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ParallelSelector","NodeData":{"Offset":"(-1085.9519,330)"},"ID":2,"Name":"Parallel
+        Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"TalkUnlimited","NodeData":{"Offset":"(-86.4465,167.304016)"},"ID":3,"Name":"Talk
+        Unlimited","Instant":true,"List`1sentences":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey,Screw!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"I''m
+        over here!"}],"List`1sentenceWaitTimes":[3,3,2]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(120,165.454529)"},"ID":4,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"Singledistance":2}]},{"Type":"Talk","NodeData":{"Offset":"(-788.7582,356.398773)"},"ID":5,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"You
+        haven\u2019t charged in a while, you should refresh your batteries, right?
+        Come on, don\u2019t be shy, step a little closer so I\u00a0can\u00a0do\u00a0my\u00a0job."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-615.740662,325.227356)"},"ID":6,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(-2.55934334,136.179749)","WatchedFields":["storedValue1"]},"ID":7,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"chargedByVendor"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject.SetActive","NodeData":{"Offset":"(-426.10144,309.1235)"},"ID":8,"Name":"Set
+        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-241.536575,320)"},"ID":9,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(2.59738541,154.2857)","WatchedFields":["storedValue1"]},"ID":10,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"ChargeCompleted"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(4.69706726,310.9096)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-173.809525,471.428528)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Talk","NodeData":{"Offset":"(-270,490)"},"ID":13,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Just
+        like all the gears in this clock are connected and work together, our job
+        doesn\u2019t let us drift too far from\u00a0one\u00a0another."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-180,580)"},"ID":14,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Don\u2019t
+        forget to come to me and recharge before your power\u00a0runs\u00a0out."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-110,480)"},"ID":15,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Alright,
+        let\u2019s get this machine up and running. I\u2019m sure it hasn\u2019t
+        had maintenance\u00a0in\u00a0a\u00a0while."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-30,380)"},"ID":16,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Go
+        and give the generator unit a\u00a0hand."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(40,290)"},"ID":17,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Looking
+        at the signs will be enough to find\u00a0your\u00a0way."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(80,200)"},"ID":18,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"\"Go
+        to the Generator!\""},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(126.190468,501.428528)"},"ID":19,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":20,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"GeneratorDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(111.428406,510)"},"ID":21,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(218.333237,349.1667)"},"ID":22,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Wow,
+        even I feel better now. Let\u2019s catch some of this\u00a0flow\u00a0next."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(369.6068,309.1667)"},"ID":23,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":24,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"FlowDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(488.125,576.875)"},"ID":25,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(595.0001,360)"},"ID":26,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Everything\u2019s
+        running smoothly, almost like butter. Maybe give these gears a little\u00a0touch\u00a0too."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(743.149,301.4815)"},"ID":27,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":28,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"GearsDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(875,574.375)"},"ID":29,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(948.6118,332.963)"},"ID":30,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Alright,
+        let\u2019s finish your first day with one last calibration. I\u2019ll be
+        waiting here anyway\u2026 I can\u2019t really\u00a0go\u00a0anywhere."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":4},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(1110.02393,310)"},"ID":31,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":32,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"CalibrationDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(1240.69434,580)"},"ID":33,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"Singledistance":2},{"Type":"Talk","NodeData":{"Offset":"(1332.60852,315)"},"ID":34,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Pretty
+        good for the first day, screw\u2014this should hold us\u00a0for\u00a0a\u00a0while."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}}]}}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -69,6 +106,18 @@ MonoBehaviour:
         unityObjects: []
         byteData: 
         byteDataArray: 
-      Version: 
+      Version: 1.7.12
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
+--- !u!114 &5592783950691452399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048409623053065050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0299102fa3dc93442bf5dc7a2c331ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

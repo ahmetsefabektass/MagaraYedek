@@ -5,6 +5,7 @@ public class Tutorial : MonoBehaviour
 {
     public static Tutorial Instance;
     BehaviorTree behaviorTree;
+    InteractableTutorial interactables;
     private void Awake()
     {
         behaviorTree = GetComponent<BehaviorTree>();

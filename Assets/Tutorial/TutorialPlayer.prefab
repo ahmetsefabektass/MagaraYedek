@@ -1394,7 +1394,6 @@ MonoBehaviour:
   moveSpeed: 0
   hasJumped: 0
   verticalVelocity: 0
-  hasLanded: 0
   jumpForce: 8
   speedCurve:
     serializedVersion: 2
@@ -1426,11 +1425,13 @@ MonoBehaviour:
   chargeDecreaseSpeed: 1
   chargingByVendor: 0
   animator: {fileID: 0}
+  slider: {fileID: 359340493884232908}
   minFov: 30
   maxFov: 80
   minFrequency: 1
   maxFrequency: 7
   menu: {fileID: 0}
+  chargedByVendor: 0
 --- !u!1 &4793455055282439406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1497,7 @@ RectTransform:
   m_Father: {fileID: 4904277932404780090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2251,7 +2252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4904277932404780090
 RectTransform:
   m_ObjectHideFlags: 0
