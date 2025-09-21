@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Clock.unity
     guid: 4fea9c015d2796a41a4abd3b41364c89
+  - enabled: 1
+    path: Assets/Scenes/Cut Scene/ExplodeCutscene.unity
+    guid: aad8a896bcfeff6448c44bd2e1a73088
   m_configObjects: {}

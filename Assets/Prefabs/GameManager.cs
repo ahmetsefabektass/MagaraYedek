@@ -36,4 +36,8 @@ public class GameManager : MonoBehaviour
         timer -= Time.deltaTime;
         GeneralUI.Instance.SetTimerText(timer);
     }
+    public void LoadDeathScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ExplodeCutScene");
+    }
 }

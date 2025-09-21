@@ -1,9 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using DG.Tweening;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -372,7 +370,7 @@ public class PlayerController : MonoBehaviour
         if (midRigNoise) midRigNoise.m_FrequencyGain = 0;
         if (botRigNoise) botRigNoise.m_FrequencyGain = 0;
         yield return new WaitForSeconds(3f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        GameManager.Instance.LoadDeathScene();
     }
     private void OnEnable()
     {
