@@ -6,7 +6,7 @@ public class MenuUI : MonoBehaviour
     [SerializeField]Image background;
     public void StartButton()
     {
-        if (SceneManager.GetActiveScene().name == "Clock")
+        if (SceneManager.GetActiveScene().name != "Menu")
         {
             HideMenu();
             return;
@@ -23,7 +23,7 @@ public class MenuUI : MonoBehaviour
     }
     public void ShowMenu()
     {
-        if (SceneManager.GetActiveScene().name == "Clock")
+        if (SceneManager.GetActiveScene().name != "Menu")
         {
             Color color = background.color;
             color.a = 0f;

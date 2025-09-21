@@ -1,0 +1,39 @@
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance;
+    private float timer;
+    public float Timer { get { return timer; } }
+    private bool timeStopped = false;
+    public bool TimeStopped { get { return timeStopped; } set { timeStopped = value; } }
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    void Start()
+    {
+        timer = 60f;
+    }
+    void Update()
+    {
+        TimeHandler();
+    }
+    public void AddTimer(float time)
+    {
+        timer += time;
+    }
+    private void TimeHandler()
+    {
+        if (timeStopped) return;
+        timer -= Time.deltaTime;
+        GeneralUI.Instance.SetTimerText(timer);
+    }
+}

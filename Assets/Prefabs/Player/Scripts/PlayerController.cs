@@ -114,9 +114,14 @@ public class PlayerController : MonoBehaviour
         }
         slider.value = ChargeValue;
 
-        if (ChargeValue <= 0 && !isDead)
+        //if (ChargeValue <= 0 && !isDead)
+        //{
+        //  isDead = true;
+        //  StartCoroutine(Die());
+        //  return;
+        //}
+        if(IsDead())
         {
-            isDead = true;
             StartCoroutine(Die());
             return;
         }
@@ -322,6 +327,15 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         moveSpeed = 0;
         accelerationTime = 0f;
+    }
+    private bool IsDead()
+    {
+        if((ChargeValue <= 0 && !isDead) || GameManager.Instance.Timer <= 0)
+        {
+            isDead = true;
+            return true;
+        }
+        return false;
     }
     public void SetJumpAnimationIntroFinished()
     {
