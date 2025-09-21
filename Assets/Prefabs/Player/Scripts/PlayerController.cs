@@ -264,6 +264,7 @@ public class PlayerController : MonoBehaviour
             }
             if (nearestInteractable != null && nearestInteractable.CanInteract && characterController.isGrounded)
             {
+                Debug.Log("Interacting with " + nearestInteractable.name);
                 IEnumerator prepare = PrepareForInteractionCoroutine(nearestInteractable.interactionPoint);
                 canNoise = false;
                 bodyTarget.transform.DOLocalRotate(new Vector3(0, 0, 0), 1f).onComplete += () =>
