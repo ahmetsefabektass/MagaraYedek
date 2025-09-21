@@ -8,6 +8,7 @@ public class GameCompose : MonoBehaviour
     float timer = 0f;
     Action gameOver;
     int randomIndex;
+    bool endlessMode = false;
     void Start()
     {
         foreach (var item in interactables)
@@ -20,6 +21,7 @@ public class GameCompose : MonoBehaviour
     }
     void Update()
     {
+        if (!endlessMode) return;
         timer += Time.deltaTime;
         if (timer >= 600)
         {
@@ -53,5 +55,9 @@ public class GameCompose : MonoBehaviour
     {
         interactables[i].CanInteract = true;
         GeneralUI.Instance.SetInfoText("Go and fix: " + interactables[i].name);
+    }
+    public void SetEndlessMode()
+    {
+        endlessMode = true;
     }
 }

@@ -369,8 +369,8 @@ public class PlayerController : MonoBehaviour
         if (topRigNoise) topRigNoise.m_FrequencyGain = 0;
         if (midRigNoise) midRigNoise.m_FrequencyGain = 0;
         if (botRigNoise) botRigNoise.m_FrequencyGain = 0;
-        yield return new WaitForSeconds(3f);
         GameManager.Instance.LoadDeathScene();
+        yield return null;
     }
     private void OnEnable()
     {
