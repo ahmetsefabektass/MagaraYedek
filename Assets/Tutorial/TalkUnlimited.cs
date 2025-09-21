@@ -3,7 +3,7 @@ using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine;
 
-public class TalkAction : Action
+public class TalkUnlimited : Action
 {
     public List<SharedString> sentences;
     public List<float> sentenceWaitTimes;

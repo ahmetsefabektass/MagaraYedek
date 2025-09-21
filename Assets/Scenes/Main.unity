@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 331384665}
   - component: {fileID: 331384664}
   - component: {fileID: 331384663}
-  - component: {fileID: 331384662}
+  - component: {fileID: 331384668}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -167,22 +167,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &331384662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331384661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 162d3f5f1fa92fc41bc65af1970afb1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionPoint: {fileID: 832831497}
-  uiController: {fileID: 704516004}
-  CanInteract: 1
-  isInRange: 0
 --- !u!65 &331384663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -292,6 +276,22 @@ Transform:
   - {fileID: 83447701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &331384668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331384661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ddf1a24d0cf5f4b84718c3c2c8e8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionPoint: {fileID: 832831497}
+  uiController: {fileID: 704516004}
+  CanInteract: 1
+  isInRange: 0
 --- !u!114 &411442689 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 876253090046529760, guid: b8e7169be86837249836cfdd584c05a2,
@@ -2509,15 +2509,30 @@ PrefabInstance:
         type: 3}
       propertyPath: mBehaviorSource.mTaskData.JSONSerialization
       value: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(327.440643,76.17974)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(37.4406433,266.179749)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ParallelSelector","NodeData":{"Offset":"(-544.285645,330)"},"ID":2,"Name":"Parallel
-        Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"TalkAction","NodeData":{"Offset":"(-90,160)"},"ID":3,"Name":"Talk
-        Action","Instant":true,"List`1sentences":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Over
-        here!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey,
-        Screw!"}]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(120,120)"},"ID":4,"Name":"Check
-        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":0},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":1},"Singledistance":2}]},{"Type":"TalkAction","NodeData":{"Offset":"(-205.714355,357.142944)"},"ID":5,"Name":"Talk
-        Action","Instant":true,"List`1sentences":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":""}]},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(41.7263527,277.6083)"},"ID":6,"Name":"Until
+        Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"TalkUnlimited","NodeData":{"Offset":"(-86.4465,167.304016)"},"ID":3,"Name":"Talk
+        Unlimited","Instant":true,"List`1sentences":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Hey,Screw!"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"I''m
+        over here!"}],"List`1sentenceWaitTimes":[3,3,2]},{"Type":"CheckRangeAction","NodeData":{"Offset":"(120,165.454529)"},"ID":4,"Name":"Check
+        Range Action","Instant":true,"SharedTransformvender":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":0},"SharedTransformplayer":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null,"TransformmValue":1},"Singledistance":2}]},{"Type":"Talk","NodeData":{"Offset":"(-247.091919,356.398773)"},"ID":5,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"You
+        haven\u2019t charged in a while, you should refresh your batteries, right?
+        Come on, don\u2019t be shy, step a little closer so I\u00a0can\u00a0do\u00a0my\u00a0job."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(-74.07441,325.227356)"},"ID":6,"Name":"Until
         Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(-2.55934334,136.179749)","WatchedFields":["storedValue1"]},"ID":7,"Name":"Has
-        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"chargedByVendor"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject.SetActive","NodeData":{"Offset":"(274.583466,221.894043)"},"ID":8,"Name":"Set
-        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":2},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}}]}}'
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"chargedByVendor"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject.SetActive","NodeData":{"Offset":"(115.56485,309.1235)"},"ID":8,"Name":"Set
+        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":2},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(300.129761,320)"},"ID":9,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(2.59738541,154.2857)","WatchedFields":["storedValue1"]},"ID":10,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"ChargeCompleted"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(546.3634,310.9096)"},"ID":11,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-150,400)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Talk","NodeData":{"Offset":"(-270,490)"},"ID":13,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Just
+        like all the gears in this clock are connected and work together, our job
+        doesn\u2019t let us drift too far from\u00a0one\u00a0another."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-180,580)"},"ID":14,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Don\u2019t
+        forget to come to me and recharge before your power\u00a0runs\u00a0out."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-110,480)"},"ID":15,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Alright,
+        let\u2019s get this machine up and running. I\u2019m sure it hasn\u2019t
+        had maintenance\u00a0in\u00a0a\u00a0while."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(-30,380)"},"ID":16,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Go
+        and give the generator unit a\u00a0hand."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(40,290)"},"ID":17,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Looking
+        at the signs will be enough to find\u00a0your\u00a0way."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"Talk","NodeData":{"Offset":"(80,200)"},"ID":18,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"\"Go
+        to the Generator!\""},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(150,430)"},"ID":19,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":20,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"GeneratorDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]}]},{"Type":"Talk","NodeData":{"Offset":"(759.9995,349.1667)"},"ID":21,"Name":"Talk","Instant":true,"SharedStringmessage":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Wow,
+        even I feel better now. Let\u2019s catch some of this\u00a0flow\u00a0next."},"SharedFloatduration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolwaitUntilFinished":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.UntilSuccess","NodeData":{"Offset":"(976.6665,309.1667)"},"ID":22,"Name":"Until
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.HasReceivedEvent","NodeData":{"Offset":"(0,150)","WatchedFields":["storedValue1"]},"ID":23,"Name":"Has
+        Received Event","Instant":true,"SharedStringeventName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"FlowDone"},"SharedVariablestoredValue1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"chargedByVendor","IsShared":true,"IsGlobal":true,"BooleanmValue":false}}]}]}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3628658747156012029, guid: 596f05213436b864981fc7232009ef11,
         type: 3}

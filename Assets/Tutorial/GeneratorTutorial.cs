@@ -1,10 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class TestCube : Interactable
+public class GeneratorTutorial : InteractableTutorial
 {
     float x;
     public override void Interact(PlayerController player)
+    {
+        
+    }
+    public override void InteractTutorial(PlayerTutorialScript player)
     {
         if (CanInteract)
         {
@@ -13,7 +17,6 @@ public class TestCube : Interactable
             StartCoroutine(InteractionCoroutine(player));
         }
     }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -42,7 +45,7 @@ public class TestCube : Interactable
         uiController.SetActive(false);
     }
 
-    private IEnumerator InteractionCoroutine(PlayerController player)
+    private IEnumerator InteractionCoroutine(PlayerTutorialScript player)
     {
         uiController.EButtonImage.enabled = false;
         uiController.fillerImage.fillAmount = 0;
@@ -51,9 +54,9 @@ public class TestCube : Interactable
         while (x < 100 && timer < 10f)
         {
             timer += Time.deltaTime;
-            if (player.inputs.Player.Interact.WasPressedThisFrame())
+            if (player.inputs.Player.Interact.IsInProgress())
             {
-                x += 5;
+                x += Time.deltaTime * 30;
             }
             x -= Time.deltaTime * 15;
             uiController.fillerImage.fillAmount = x / 100;
@@ -64,5 +67,6 @@ public class TestCube : Interactable
         uiController.gameObject.SetActive(false);
         player.HasInteracted = false;
         GameManager.Instance.AddTimer(40f);
+        Tutorial.Instance.GetBehaviorTree().SendEvent("GeneratorDone");
     }
 }

@@ -79,6 +79,7 @@ public class VendorTutorialScript : InteractableTutorial
         player.chargingByVendor = false;
         CanInteract = true;
         player.HasInteracted = false;
+        Tutorial.Instance.GetBehaviorTree().SendEvent("ChargeCompleted");
     }
 
 
