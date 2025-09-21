@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial Scene/ClockTutorial.unity
     guid: 824b1148bb727384b8560f9a1deedbc7
+  - enabled: 1
+    path: Assets/Scenes/Final/FinalScene.unity
+    guid: 0a76bc7a454ad3741a5c6d0f05b46b65
   m_configObjects: {}

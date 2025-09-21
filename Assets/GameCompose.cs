@@ -18,12 +18,12 @@ public class GameCompose : MonoBehaviour
         }
         randomIndex = UnityEngine.Random.Range(0, interactables.Count);
         SelectInteractable(randomIndex);
-        gameOver += () => GameManager.Instance.LoadDeathScene();
+        gameOver += () => GameManager.Instance.LoadFinalScene();
     }
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 5)
+        if (timer >= 600)
         {
             gameOver?.Invoke();
             //GameManager.Instance.LoadDeathScene();

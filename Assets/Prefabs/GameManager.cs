@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,5 +40,11 @@ public class GameManager : MonoBehaviour
     public void LoadDeathScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("ExplodeCutScene");
+    }
+    public void LoadFinalScene()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("FinalScene");
     }
 }
