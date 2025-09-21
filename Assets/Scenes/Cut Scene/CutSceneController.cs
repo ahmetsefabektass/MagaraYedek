@@ -21,13 +21,13 @@ public class CutSceneController : MonoBehaviour
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Clock");
+            SceneManager.LoadScene("ClockTutorial");
         }
     }
     IEnumerator PlayVideoAndLoadScene()
     {
         videoPlayer.Play();
         yield return new WaitForSeconds(videoDuration);
-        SceneManager.LoadScene("Clock");
+        SceneManager.LoadScene("ClockTutorial");
     }
 }

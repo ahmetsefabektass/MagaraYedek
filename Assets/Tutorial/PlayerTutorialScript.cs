@@ -374,15 +374,20 @@ public class PlayerTutorialScript : MonoBehaviour
         if (botRigNoise) botRigNoise.m_FrequencyGain = 0;
 
         yield return new WaitForSeconds(3f);
-        SpawnPlayerToRespawnPoint();
-    }
-    private void SpawnPlayerToRespawnPoint()
-    {
-        transform.position = spawnPoint.position;
+        //SpawnPlayerToRespawnPoint();
+        GeneralUI.Instance.SetInfoText("Be more careful about your charge", 3f);
+        animator.SetTrigger("Idle");
         isDead = false;
         ChargeValue = 50f;
         slider.value = ChargeValue;
-        canNoise = true;
+        CanInteract = true;
+        isDead = false;
+        yield return null;
+
+    }
+    private void SpawnPlayerToRespawnPoint()
+    {
+        
     }
     private void OnEnable()
     {
