@@ -21,6 +21,7 @@ public class VendorTutorialScript : InteractableTutorial
         Tutorial.Instance.GetBehaviorTree().SendEvent("chargedByVendor");
         if (CanInteract && !player.chargingByVendor && player.ChargeValue < 100f)
         {
+            uiController.gameObject.SetActive(false);
             CanInteract = false;
             player.chargingByVendor = true;
             player.HasInteracted = true;
@@ -57,6 +58,7 @@ public class VendorTutorialScript : InteractableTutorial
     }
     IEnumerator ChargePlayer(PlayerTutorialScript player)
     {
+
         player.animator.SetTrigger("charging");
         animator.SetTrigger("charging");
 

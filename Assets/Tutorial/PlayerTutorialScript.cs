@@ -54,6 +54,7 @@ public class PlayerTutorialScript : MonoBehaviour
     [SerializeField] MenuUI menu;
 
     public bool chargedByVendor = false;
+    public Transform spawnPoint;
     private void Awake()
     {
         CanInteract = true;
@@ -115,10 +116,11 @@ public class PlayerTutorialScript : MonoBehaviour
             }
             slider.value = ChargeValue;
         }
-            
+
 
         if (IsDead())
         {
+            Debug.Log("Dead");
             StartCoroutine(Die());
             return;
         }
@@ -375,7 +377,11 @@ public class PlayerTutorialScript : MonoBehaviour
     }
     private void SpawnPlayerToRespawnPoint()
     {
-
+        transform.position = spawnPoint.position;
+        isDead = false;
+        ChargeValue = 50f;
+        slider.value = ChargeValue;
+        canNoise = true;
     }
     private void OnEnable()
     {

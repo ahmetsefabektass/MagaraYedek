@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5793711981771376483}
   - component: {fileID: 3638660229156664315}
   - component: {fileID: 6487310106886834519}
-  - component: {fileID: 1048944520891373050}
+  - component: {fileID: 4782030131412399541}
   m_Layer: 0
   m_Name: jumppadtutorial
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210215253929775809}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -47.404373, y: 26.998041, z: 53.00838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -128,7 +128,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.3738213, y: 1.6334801, z: 3.08955}
   m_Center: {x: -0.004419327, y: 1.0636861, z: -0.02363956}
---- !u!114 &1048944520891373050
+--- !u!114 &4782030131412399541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1210215253929775809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab5ea573d17e724fa74f016b0ed8543, type: 3}
+  m_Script: {fileID: 11500000, guid: 00ff82b472e4f834ea2e894b3d6b21e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 20
